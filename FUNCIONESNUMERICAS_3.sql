@@ -25,3 +25,16 @@ SELECT SQRT(16) FROM EMPLEADO;
 
 --3.1.9 TRUNC: Trunca un número a la cantidad de decimales especificada por el segundo argumento.
 SELECT TRUNC(211.1872728, 2) FROM EMPLEADO;
+
+--6.1 SUM(): Suma el valor total de un campo
+SELECT SUM(presupuesto) FROM Proyectos;
+
+--6.1 COUNT(): Cuenta el total de filas de un campo
+SELECT COUNT(id_empleado) FROM Empleados;
+
+--6.2 MIN/MAX: Maximo de un valor y minimo
+SELECT MAX(presupuesto) FROM Proyectos;
+SELECT MIN(presupuesto) FROM Proyectos;
+
+--6.2 AVG: Media de un valor
+SELECT AVG(presupuesto) FROM Proyectos;
